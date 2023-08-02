@@ -12,6 +12,7 @@
 		A77AF8622A7A9B4300828A70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77AF8612A7A9B4300828A70 /* ViewController.swift */; };
 		A77AF8672A7A9B4500828A70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77AF8662A7A9B4500828A70 /* Assets.xcassets */; };
 		A77AF86A2A7A9B4500828A70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A77AF8682A7A9B4500828A70 /* LaunchScreen.storyboard */; };
+		A77AF8742A7AA16000828A70 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = A77AF8732A7AA16000828A70 /* PinLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A77AF8742A7AA16000828A70 /* PinLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = EmbeddedPlayer;
+			packageProductDependencies = (
+				A77AF8732A7AA16000828A70 /* PinLayout */,
+			);
 			productName = EmbeddedPlayer;
 			productReference = A77AF85A2A7A9B4300828A70 /* EmbeddedPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = A77AF8512A7A9B4300828A70;
+			packageReferences = (
+				A77AF8722A7AA16000828A70 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = A77AF85B2A7A9B4300828A70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A77AF8722A7AA16000828A70 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/openbakery/PinLayout/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A77AF8732A7AA16000828A70 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A77AF8722A7AA16000828A70 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A77AF8522A7A9B4300828A70 /* Project object */;
 }
